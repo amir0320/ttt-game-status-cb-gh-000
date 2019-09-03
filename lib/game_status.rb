@@ -30,5 +30,5 @@ def won?(board)
 end
 
 def full?(board)
-        board.include?(" ")
+        board.any? {|index| index == " "}
 end
