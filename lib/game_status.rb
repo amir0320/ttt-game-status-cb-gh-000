@@ -30,9 +30,9 @@ def won?(board)
 end
 
 def full?(board)
-        board.all? {|index| index != " "}
+        return board.all? {|index| index != " "}
 end
 
 def draw?(board)
-
+        return !won?(board) && full?(board)
 end
