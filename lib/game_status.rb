@@ -30,5 +30,5 @@ def won?(board)
 end
 
 def full?(board)
-        return board.any?{|index| !position_taken?(board, index.to_i)}
+        return board.any?{|index| position_taken?(board, index.to_i)}
 end
